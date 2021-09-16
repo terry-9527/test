@@ -1,0 +1,24 @@
+2021-08-31 09:26:28,057 - ERROR - this is a ERROR log
+2021-08-31 09:26:28,059 - CRITICAL - this is a CRITICAL log
+this is a ERROR log
+this is a CRITICAL log
+2021-08-31 10:26:35,878 - mylogger - DEBUG - this is a DEBUG log
+2021-08-31 10:26:35,878 - mylogger - INFO - this is a INFO log
+2021-08-31 10:26:35,878 - mylogger - WARNING - this is a WARNING log
+2021-08-31 10:26:35,878 - mylogger - ERROR - this is a ERROR log
+2021-08-31 10:26:35,878 - mylogger - CRITICAL - this is a CRITICAL log
+2021-08-31 10:26:55,483 - root - DEBUG - this is a DEBUG log
+2021-08-31 10:26:55,483 - root - INFO - this is a INFO log
+2021-08-31 10:26:55,483 - root - WARNING - this is a WARNING log
+2021-08-31 10:26:55,483 - root - ERROR - this is a ERROR log
+2021-08-31 10:26:55,483 - root - CRITICAL - this is a CRITICAL log
+2021-08-31 10:29:11,835 - mylogger - MainProcess - DEBUG - this is a DEBUG log
+2021-08-31 10:29:11,835 - mylogger - MainProcess - INFO - this is a INFO log
+2021-08-31 10:29:11,835 - mylogger - MainProcess - WARNING - this is a WARNING log
+2021-08-31 10:29:11,835 - mylogger - MainProcess - ERROR - this is a ERROR log
+2021-08-31 10:29:11,835 - mylogger - MainProcess - CRITICAL - this is a CRITICAL log
+2021-08-31 10:30:29,505 - mylogger - MainProcess  - <module> - DEBUG - this is a DEBUG log
+2021-08-31 10:30:29,505 - mylogger - MainProcess  - <module> - INFO - this is a INFO log
+2021-08-31 10:30:29,505 - mylogger - MainProcess  - <module> - WARNING - this is a WARNING log
+2021-08-31 10:30:29,505 - mylogger - MainProcess  - <module> - ERROR - this is a ERROR log
+2021-08-31 10:30:29,505 - mylogger - MainProcess  - <module> - CRITICAL - this is a CRITICAL log

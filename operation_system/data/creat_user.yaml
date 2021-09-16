@@ -1,0 +1,95 @@
+case01:
+  case_name: "新建用户"
+  url: "https://opstest.arsyun.com/api/v1/user"
+  headers:
+  method: get
+  params:
+    name: "test001"
+    email: "test@arsyun.com"
+    owned_customer: 1
+    password: "aa123456"
+    phone: "15522223333"
+    role: 2
+  excepted:
+    status_code: 200
+    username: test001
+
+case02:
+  case_name: "新建用户,phone已经被注册"
+  url: "https://opstest.arsyun.com/api/v1/user"
+  headers:
+  method: get
+  params:
+    name: "test001"
+    email: "test@arsyun.com"
+    owned_customer: 1
+    password: "aa123456"
+    phone: "15522223333"
+    role: 2
+  excepted:
+    status_code: 200
+    description: "电话号码已被注册，请更换重试！"
+
+case03:
+  case_name: "新建用户,phone为空"
+  url: "https://opstest.arsyun.com/api/v1/user"
+  headers:
+  method: get
+  params:
+    name: "test001"
+    email: "test@arsyun.com"
+    owned_customer: 1
+    password: "aa123456"
+    phone:
+    role: 2
+  excepted:
+    status_code: 200
+    description: "电话号码为必填字段"
+
+#case04:
+#  case_name: "新建用户,password为空"
+#  url: "https://opstest.arsyun.com/api/v1/user"
+#  headers:
+#  method: get
+#  params:
+#    name: "test001"
+#    email: "test@arsyun.com"
+#    owned_customer: 1
+#    password: ""
+#    phone: "15522223333"
+#    role: 2
+#  excepted:
+#    status_code: 200
+#    description: "密码为必填字段"
+#
+#case05:
+#  case_name: "新建用户,phone和password同时为空"
+#  url: "https://opstest.arsyun.com/api/v1/user"
+#  headers:
+#  method: get
+#  params:
+#    name: "test001"
+#    email: "test@arsyun.com"
+#    owned_customer: 1
+#    password: ""
+#    phone: ""
+#    role: 2
+#  excepted:
+#    status_code: 200
+#    description: "电话号码为必填字段"
+#
+#case06:
+#  case_name: "新建用户,email为空"
+#  url: "https://opstest.arsyun.com/api/v1/user"
+#  headers:
+#  method: get
+#  params:
+#    name: "test001"
+#    email: ""
+#    owned_customer: 1
+#    password: "aa123456"
+#    phone: "15522223336"
+#    role: 2
+#  excepted:
+#    status_code: 200
+#    description: ""

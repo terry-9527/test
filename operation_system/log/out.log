@@ -1,0 +1,4 @@
+2021-08-30 16:06:56,096 - INFO - this is a info log
+2021-08-30 16:06:56,096 - WARNING - this is a warning log
+2021-08-30 16:06:56,096 - ERROR - this is a error log
+2021-08-30 16:06:56,096 - CRITICAL - this is a debug log

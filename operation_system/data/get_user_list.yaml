@@ -1,0 +1,28 @@
+case01:
+  desc: "获取单个用户列表"
+  url: "https://opstest.arsyun.com/api/v1/user/info"
+  headers:
+  method: get
+  params:
+    name: "Terry2"
+    page: 1
+    page_size: 20
+  excepted:
+    status_code: 200
+    username: Terry2
+    total: 1
+
+case02:
+  desc: "获取所有用户列表"
+  url: "https://opstest.arsyun.com/api/v1/user/info"
+  headers:
+  method: get
+  params:
+    name:
+    page: 1
+    page_size: 20
+  excepted:
+    status_code: 200
+    length: ture
+
+

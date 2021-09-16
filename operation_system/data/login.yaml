@@ -1,0 +1,60 @@
+case01:
+  case_name: "正确的账号和密码"
+  url: "https://opstest.arsyun.com/api/v1/auth/login"
+  headers:
+  method: post
+  params:
+    phone: "18276762767"
+    password: "aa123456"
+  excepted:
+    status_code: 200
+    description: "登录成功"
+
+case02:
+  case_name: "错误的密码"
+  url: "https://opstest.arsyun.com/api/v1/auth/login"
+  headers:
+  method: post
+  params:
+    phone: "13692286362"
+    password: "aa12345"
+  excepted:
+    status_code: 200
+    description: "登录密码错误"
+
+case03:
+  case_name: "错误的手机号码"
+  url: "https://opstest.arsyun.com/api/v1/auth/login"
+  headers:
+  method: post
+  params:
+    phone: "18276762768"
+    password: "aa123456"
+  excepted:
+    status_code: 200
+    description: "该用户未注册"
+
+#case04:
+#  case_name: "手机号为空"
+#  url: "https://opstest.arsyun.com/api/v1/auth/login"
+#  headers:
+#  method: post
+#  params:
+#    phone: ""
+#    password: "aa123456"
+#  excepted:
+#    status_code: 200
+#    description: "用户名为必填字段"
+#
+#case05:
+#  case_name: "密码为空"
+#  url: "https://opstest.arsyun.com/api/v1/auth/login"
+#  headers:
+#  method: post
+#  params:
+#    phone: "18276762767"
+#    password: ""
+#  excepted:
+#    status_code: 200
+#    description: "登录密码错误"
+

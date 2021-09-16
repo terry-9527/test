@@ -1,0 +1,44 @@
+case01:
+  case_name: "修改用户email信息"
+  url: "https://opstest.arsyun.com/api/v1/self"
+  headers:
+  method: PUT
+  params:
+    email: "1061266869@qq.com"
+    phone: "18276762767"
+    username: "Terry1"
+  excepted:
+    status_code: 200
+    username: Terry1
+    phone: "18276762767"
+    email: "1061266869@qq.com"
+
+case02:
+  case_name: "修改用户username信息"
+  url: "https://opstest.arsyun.com/api/v1/self"
+  headers:
+  method: PUT
+  params:
+    email: "1061266869@qq.com"
+    phone: "18276762767"
+    username: "Terry2"
+  excepted:
+    status_code: 200
+    username: Terry2
+    phone: "18276762767"
+    email: "1061266869@qq.com"
+
+case03:
+  case_name: "修改用户phone信息"
+  url: "https://opstest.arsyun.com/api/v1/self"
+  headers:
+  method: PUT
+  params:
+    email: "1061266869@qq.com"
+    phone: "18276762767"
+    username: "Terry2"
+  excepted:
+    status_code: 200
+    username: Terry2
+    phone: "18276762767"
+    email: "1061266869@qq.com"

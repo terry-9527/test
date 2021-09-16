@@ -1,0 +1,10 @@
+case01:
+  case_name: "\u83B7\u53D6\u7528\u6237\u4FE1\u606F"
+  excepted:
+    phone: '18276762767'
+    status_code: 200
+    username: Terry2
+  headers: null
+  method: get
+  params: null
+  url: https://opstest.arsyun.com/api/v1/self

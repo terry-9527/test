@@ -1,0 +1,9 @@
+--数据库初始化sql语句
+--登陆接口 test01删除后添加
+delete from users where username='test001'
+
+insert into users(id,client_id,username,phone,password,salt,role_id,email,permission) values(119,1,'test001','15522223333','0a2a961e6e813ffa754af34a652f72d6','a75ee26b-f353-45e5-b2c6-6f628bb5063d',2,'test@arsyun.com',0)
+
+
+
+------------------------------------------------------

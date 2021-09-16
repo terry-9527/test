@@ -1,0 +1,5 @@
+2021-09-07 18:26:20,243 - DEBUG - this is a DEBUG log
+2021-09-07 18:26:20,245 - INFO - this is a INFO log
+2021-09-07 18:26:20,245 - WARNING - this is a WARNING log
+2021-09-07 18:26:20,245 - ERROR - this is a ERROR log
+2021-09-07 18:26:20,502 - CRITICAL - this is a CRITICAL log

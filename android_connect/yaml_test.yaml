@@ -1,0 +1,13 @@
+Server:
+  url:  https://opstest.arsyun.com/api/v1/auth/login
+  data:
+    -
+        phone:  "18276762767"
+        password:  "aa123456"
+    -
+        phone:  "18276762767"
+        password:  "123456"
+    -
+        phone:  "18276762767"
+        password: "aa123456aa"
+

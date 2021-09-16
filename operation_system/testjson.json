@@ -1,0 +1,21 @@
+{
+	"testcase": [
+		[{
+			"phone": "18276762767",
+			"password": "aa123456"
+		},
+          {"expected": "登录成功"}
+        ],
+		[{
+			"phone": "",
+			"password": "aa123456"
+		},
+          {"expected": "用户名为必填字段"}
+        ],
+		[{
+			"phone": "18276762767",
+			"password": ""
+		},
+          {"expected": "登录密码错误"}]
+	]
+}
