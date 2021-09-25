@@ -1,11 +1,11 @@
+from WebUI_ops.common import keywords
 from WebUI_ops.page_location.login_location.login_location import LoginLocation
 from WebUI_ops.common.keywords import KeyWords
 
-
 class LoginOperation(KeyWords):
 
-    def __init__(self, url, driver_type):
-        super(LoginOperation, self).__init__(url, driver_type)
+    def __init__(self,driver):
+        super(LoginOperation, self).__init__(driver)
         self.lct = LoginLocation()
 
     # 输入手机号码
@@ -29,7 +29,9 @@ class LoginOperation(KeyWords):
 
 if __name__ == '__main__':
     url = "https://opstest.arsyun.com/#/"
-    login_opt = LoginOperation(url, "Chrome")
+    driver = keywords.init_driver("Chrome")
+    login_opt = LoginOperation(driver)
+    login_opt.open_browser(url)
     login_opt.input_phone("18276762767")
     login_opt.input_pwd("aa123456")
     login_opt.click_login_button()

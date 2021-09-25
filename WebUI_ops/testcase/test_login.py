@@ -4,6 +4,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import unittest
+
+from WebUI_ops.common.keywords import driver
 from WebUI_ops.page_operation.login_opt.login_opt import LoginOperation
 from WebUI_ops.common.get_data import GetData
 from ddt import ddt, data, unpack
@@ -14,7 +16,9 @@ class Login(unittest.TestCase):
 
     def setUp(self):
         url = "https://opstest.arsyun.com/#/"
-        self.login_opt = LoginOperation(url, "Chrome")
+        self.driver = driver
+        self.login_opt = LoginOperation(self.driver)
+        self.login_opt.open_browser(url)
 
     def tearDown(self):
         # 登陆成功后等待3秒退出浏览器

@@ -13,22 +13,24 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-class KeyWords():
-    def __init__(self, url, driver_type):
-        self.driver = self.init_driver(driver_type)
-        self.driver.implicitly_wait(10)
-        self.open_browser(url)
-        self.driver.maximize_window()
+# 初始化浏览器，若传入的浏览器驱动存在，则启动对应的浏览器，否则默认启动谷歌浏览器
+def init_driver(driver_type):
+    try:
+        driver = getattr(webdriver, driver_type)()
+        return driver
+    except Exception as e:
+        print("输入的浏览器驱动不可用，正在为您启动Google浏览器", e)
+        driver = webdriver.Chrome()
+        return driver
 
-    # 初始化浏览器，若传入的浏览器驱动存在，则启动对应的浏览器，否则默认启动谷歌浏览器
-    def init_driver(self, driver_type):
-        try:
-            self.driver = getattr(webdriver, driver_type)()
-            return self.driver
-        except Exception as e:
-            print("输入的浏览器驱动不可用，正在为您启动Google浏览器", e)
-            self.driver = webdriver.Chrome()
-            return self.driver
+
+
+
+class KeyWords():
+    def __init__(self, driver):
+        self.driver = driver
+        self.driver.implicitly_wait(10)
+        self.driver.maximize_window()
 
     # 打开浏览器
     def open_browser(self, url):
@@ -87,8 +89,10 @@ class KeyWords():
 
 if __name__ == '__main__':
     url = "https://www.baidu.com"
-    kd = KeyWords(url, 'Chrome')
-    kd.input_text('name', 'w1d', '倚天屠龙记')
+    # driver = init_driver("Chrome")
+    kd = KeyWords(driver)
+    kd.open_browser(url)
+    kd.input_text('name', 'wd', '倚天屠龙记')
     kd.click_element('id', 'su')
     kd.wait(2)
     kd.close_browser()
