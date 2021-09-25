@@ -26,10 +26,12 @@ class UserInfo(unittest.TestCase):
         self.userinfo_opt.close_browser()
 
     def test_add_user(self):
+        # 登陆流程，输入手机号和密码
         self.login_opt.input_phone("18276762767")
         self.login_opt.input_pwd("aa123456")
         self.login_opt.click_login_button()
         self.login_opt.wait(2)
+        # 依次点击系统设置--》用户信息--》新建用户
         self.userinfo_opt.click_system_setting()
         self.userinfo_opt.wait(2)
         self.userinfo_opt.click_userinfo()

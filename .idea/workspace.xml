@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bac2707f-2cfb-42a2-b791-252ff567e986" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/common/keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/common/keywords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/add_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/userinfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/page_operation/login_opt/login_opt.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/page_operation/login_opt/login_opt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/testcase/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/testcase/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/userinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/userinfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUI_ops/page_operation/system_setting/userinfo/userinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/page_operation/system_setting/userinfo/userinfo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/userinfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="64" />
+            <state relative-caret-position="325">
+              <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -84,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebUI_ops/page_operation/system_setting/userinfo/userinfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
-              <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+            <state relative-caret-position="168">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#28#65#0" expanded="true" />
               </folding>
@@ -93,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+            <state relative-caret-position="400">
+              <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <element signature="e#313#331#0" />
@@ -140,8 +138,9 @@
         <option value="$PROJECT_DIR$/WebUI_ops/page_location/login_location/login_location.py" />
         <option value="$PROJECT_DIR$/WebUI_ops/page_operation/login_opt/login_opt.py" />
         <option value="$PROJECT_DIR$/WebUI_ops/common/keywords.py" />
-        <option value="$PROJECT_DIR$/WebUI_ops/page_operation/system_setting/userinfo/userinfo.py" />
         <option value="$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo.py" />
+        <option value="$PROJECT_DIR$/WebUI_ops/page_operation/system_setting/userinfo/userinfo.py" />
+        <option value="$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/userinfo.py" />
       </list>
     </option>
   </component>
@@ -379,9 +378,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_login_py - 2021.09.25 at 12h 22m 29s.xml">
-      <configuration name="Unittests in test_login.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_login_py - 2021.09.25 at 12h 25m 23s.xml">
       <configuration name="Unittests in test_login.py" configurationId="tests" />
     </history-entry>
@@ -408,6 +404,9 @@
     </history-entry>
     <history-entry file="Unittests_in_test_login_py - 2021.09.25 at 23h 19m 21s.xml">
       <configuration name="Unittests in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_userinfo_py - 2021.09.25 at 23h 45m 31s.xml">
+      <configuration name="Unittests in test_userinfo.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -512,13 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/userinfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebUI_ops/page_location/login_location/login_location.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -546,24 +538,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#313#331#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebUI_ops/page_operation/system_setting/userinfo/userinfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        <state relative-caret-position="168">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#28#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo.py">
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/userinfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#313#331#0" />
-          </folding>
+        <state relative-caret-position="325">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
