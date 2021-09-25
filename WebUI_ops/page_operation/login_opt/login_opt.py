@@ -1,29 +1,37 @@
 from WebUI_ops.page_location.login_location.login_location import LoginLocation
+from WebUI_ops.common.keywords import KeyWords
 
 
-class LoginOperation():
+class LoginOperation(KeyWords):
 
-    def __init__(self, driver):
-        self.driver = driver
+    def __init__(self, url, driver_type):
+        super(LoginOperation, self).__init__(url, driver_type)
         self.lct = LoginLocation()
-
-    # 打开浏览器
-    def open_broswer(self, url):
-        self.driver.get(url)
-
-    # 关闭浏览器
-    def close_broswer(self):
-        self.driver.quit()
 
     # 输入手机号码
     def input_phone(self, phone):
-        self.driver.find_element(*self.lct.phone).clear()
-        self.driver.find_element(*self.lct.phone).send_keys(phone)
+        self.clear(*self.lct.phone)
+        self.input_text(*self.lct.phone, phone)
+        # self.driver.find_element(*self.lct.phone).clear()
+        # self.driver.find_element(*self.lct.phone).send_keys(phone)
 
     # 输入密码
     def input_pwd(self, pwd):
-        self.driver.find_element(*self.lct.password).clear()
-        self.driver.find_element(*self.lct.password).send_keys(pwd)
+        self.clear(*self.lct.password)
+        self.input_text(*self.lct.password, pwd)
+        # self.driver.find_element(*self.lct.password).clear()
+        # self.driver.find_element(*self.lct.password).send_keys(pwd)
 
     def click_login_button(self):
-        self.driver.find_element(*self.lct.login_button).click()
+        self.click_element(*self.lct.login_button)
+        # self.driver.find_element(*self.lct.login_button).click()
+
+
+if __name__ == '__main__':
+    url = "https://opstest.arsyun.com/#/"
+    login_opt = LoginOperation(url, "Chrome")
+    login_opt.input_phone("18276762767")
+    login_opt.input_pwd("aa123456")
+    login_opt.click_login_button()
+    login_opt.wait(2)
+    login_opt.close_browser()
