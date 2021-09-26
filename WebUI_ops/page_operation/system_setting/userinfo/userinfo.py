@@ -42,5 +42,7 @@ if __name__ == '__main__':
     ui.click_userinfo()
     ui.wait(2)
     ui.click_new_user()
+    ui.wait(2)
+    ui.close_browser()
 
 

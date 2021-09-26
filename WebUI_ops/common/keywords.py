@@ -89,7 +89,7 @@ class KeyWords():
 
 if __name__ == '__main__':
     url = "https://www.baidu.com"
-    # driver = init_driver("Chrome")
+    driver = init_driver("Chrome")
     kd = KeyWords(driver)
     kd.open_browser(url)
     kd.input_text('name', 'wd', '倚天屠龙记')

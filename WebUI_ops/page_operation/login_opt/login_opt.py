@@ -29,9 +29,10 @@ class LoginOperation(KeyWords):
 
 if __name__ == '__main__':
     url = "https://opstest.arsyun.com/#/"
-    driver = keywords.init_driver("Chrome")
+    driver = keywords.init_driver("Firefox")
     login_opt = LoginOperation(driver)
     login_opt.open_browser(url)
+    login_opt.wait(2)
     login_opt.input_phone("18276762767")
     login_opt.input_pwd("aa123456")
     login_opt.click_login_button()

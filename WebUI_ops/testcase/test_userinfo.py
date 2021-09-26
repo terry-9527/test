@@ -1,4 +1,7 @@
 import unittest
+
+from selenium.webdriver.common.by import By
+
 from WebUI_ops.page_operation.login_opt.login_opt import LoginOperation
 from WebUI_ops.page_operation.system_setting.userinfo.userinfo import UserInfoOperation
 from WebUI_ops.common import keywords
@@ -38,6 +41,12 @@ class UserInfo(unittest.TestCase):
         self.userinfo_opt.wait(2)
         self.userinfo_opt.click_new_user()
         self.userinfo_opt.wait(2)
+        el1 = self.driver.find_elements(By.XPATH, '//span[@class="ant-select-selection-item"]')[1]
+        el1.click()
+        self.userinfo_opt.wait(10)
+        el2 = self.driver.find_element(By.XPATH,"//div[@class='ant-select ant-select-focus ant-select-single ant-select-show-arrow ant-select-open')]")
+        el2.send_keys("test")
+
 
 
 if __name__ == '__main__':
