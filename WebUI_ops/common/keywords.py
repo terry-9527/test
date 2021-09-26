@@ -24,8 +24,6 @@ def init_driver(driver_type):
         return driver
 
 
-
-
 class KeyWords():
     def __init__(self, driver):
         self.driver = driver
@@ -66,8 +64,38 @@ class KeyWords():
         except Exception as e:
             print(e, "定位元素失败,定位方式{},定位信息{}".format(locator_type, location))
 
+    def locators(self, locator_type, location):
+        try:
+            if locator_type.upper() == "ID":
+                elements = self.driver.find_elements(By.ID, location)
+                return elements
+            elif locator_type.upper() == "NAME":
+                elements = self.driver.find_elements(By.NAME, location)
+                return elements
+            elif locator_type.upper() == "CLASS_NAME":
+                elements = self.driver.find_elements(By.CLASS_NAME, location)
+                return elements
+            elif locator_type.upper() == "TAG_NAME":
+                elements = self.driver.find_elements(By.TAG_NAME, location)
+                return elements
+            elif locator_type.upper() == "LINK_TEXT":
+                elements = self.driver.find_elements(By.LINK_TEXT, location)
+                return elements
+            elif locator_type.upper() == "PARTIAL_LINK_TEXT":
+                elements = self.driver.find_elements(By.PARTIAL_LINK_TEXT, location)
+                return elements
+            elif locator_type.upper() == "XPATH":
+                elements = self.driver.find_elements(By.XPATH, location)
+                return elements
+            elif locator_type.upper() == "CSS_SELECTOR":
+                elements = self.driver.find_elements(By.CSS_SELECTOR, location)
+                return elements
+        except Exception as e:
+            print(e, "定位元素失败,定位方式{},定位信息{}".format(locator_type, location))
+
     # 输入内容：input_text
     def input_text(self, locator_type, location, content):
+        self.clear(locator_type, location)
         self.locator(locator_type, location).send_keys(content)
 
     # 清除输入框

@@ -43,9 +43,8 @@ class UserInfo(unittest.TestCase):
         self.userinfo_opt.wait(2)
         el1 = self.driver.find_elements(By.XPATH, '//span[@class="ant-select-selection-item"]')[1]
         el1.click()
-        self.userinfo_opt.wait(10)
-        el2 = self.driver.find_element(By.XPATH,"//div[@class='ant-select ant-select-focus ant-select-single ant-select-show-arrow ant-select-open')]")
-        el2.send_keys("test")
+        self.userinfo_opt.wait(1)
+        el1.click()
 
 
 
