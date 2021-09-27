@@ -106,6 +106,11 @@ class KeyWords():
     def click_element(self, locator_type, location):
         self.locator(locator_type, location).click()
 
+    # 获取元素的文本
+    def get_text(self,locator_type, location):
+        text = self.locator(locator_type,location)
+        return text
+
     # 设置等待时间
     def wait(self, second):
         time.sleep(second)
