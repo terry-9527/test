@@ -39,10 +39,12 @@ if __name__ == '__main__':
     ui = UserInfoOperation(driver)
     ui.click_system_setting()
     ui.wait(2)
-    ui.click_userinfo()
-    ui.wait(2)
-    ui.click_new_user()
-    ui.wait(2)
+    ui.locator('xpath','//span[@class="ant-menu-title-content" and text()="机房信息"]').click()
+    ui.wait(3)
+    # ui.click_userinfo()
+    # ui.wait(2)
+    # ui.click_new_user()
+    # ui.wait(2)
     ui.close_browser()
 
 
