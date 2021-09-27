@@ -1,11 +1,9 @@
 """
     测试首页的登陆功能
 """
-from selenium import webdriver
-from selenium.webdriver.common.by import By
 import unittest
 
-from WebUI_ops.common.keywords import driver
+from WebUI_ops.common import keywords
 from WebUI_ops.page_operation.login_opt.login_opt import LoginOperation
 from WebUI_ops.common.get_data import GetData
 from ddt import ddt, data, unpack
@@ -16,7 +14,7 @@ class Login(unittest.TestCase):
 
     def setUp(self):
         url = "https://opstest.arsyun.com/#/"
-        self.driver = driver
+        self.driver = keywords.init_driver("Chrome")
         self.login_opt = LoginOperation(self.driver)
         self.login_opt.open_browser(url)
 
@@ -30,16 +28,6 @@ class Login(unittest.TestCase):
 
     @data(*cases)
     def test01_loggin(self, args):
-        # # 输入手机号码
-        # print("开始执行用例：" + str(args[0]) + ":" + str(args[1]))
-        # self.opt.input_phone(eval(args[2])['phone'])
-        # # 输入密码
-        # self.opt.input_pwd(eval(args[2])['password'])
-        # # 点击登陆按钮
-        # sleep(2)
-        # self.opt.click_login_button()
-        # sleep(2)
-
         # 输入手机号码
         print("开始执行用例：" + str(args[0]) + ":" + str(args[1]))
         self.login_opt.input_phone(eval(args[2])['phone'])

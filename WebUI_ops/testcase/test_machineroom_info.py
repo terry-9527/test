@@ -11,6 +11,7 @@ from WebUI_ops.page_operation.system_setting.userinfo.userinfo import UserInfoOp
 from ddt import ddt, data, unpack, file_data
 from WebUI_ops.common.get_data import GetData
 
+
 @ddt
 class TestMachineRoomInfo(unittest.TestCase):
 
@@ -25,7 +26,9 @@ class TestMachineRoomInfo(unittest.TestCase):
     def tearDown(self):
         self.opt1.wait(2)
         self.opt1.close_browser()
+
     cases = GetData().getExcel('machineroominfo.xlsx')
+
     @data(*cases)
     def test_add_machineroom(self, params):
         # print(eval(params[2]))
@@ -59,9 +62,10 @@ class TestMachineRoomInfo(unittest.TestCase):
         self.opt1.click_confirm_button()
         self.opt1.wait(3)
         if eval(params[2])['machineroom_name'] and eval(params[2])['address']:
-        # 点击创建后弹窗提示的我知道了按钮
+            # 点击创建后弹窗提示的我知道了按钮
             self.opt1.click_success_confirm_button()
-            self.assertEqual(eval(params[3])['success_msg'],self.opt1.get_success_msg(),msg="断言成功")
+            self.assertEqual(eval(params[3])['success_msg'], self.opt1.get_success_msg(), msg="断言成功")
+
 
 if __name__ == '__main__':
     unittest.main()
