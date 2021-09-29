@@ -40,8 +40,17 @@ class MachineRoomInfoLocation():
         # "我知道了"按钮
         self.success_confirm_button = ('xpath', '//span[text()="我知道了"]')
 
-        # 用户名为空错误提示信息 //div[text()="请输入机房名称"]
-        self.machineroom_null = ('xpath', '//div[text()="请输入机房名称"]')
+        # 机房名为空错误提示信息 //div[text()="请输入机房名称"]
+        self.machineroom_noname = ('xpath', '//div[text()="请输入机房名称"]')
 
         # 机房所在地为空错误提示信息 //div[text()="请输入机房名称"]
-        self.machineroom_null = ('xpath', '//div[text()="请输入机房所在地"]')
+        self.machineroom_noaddress = ('xpath', '//div[text()="请输入机房所在地"]')
+
+        # 重复的机房名称错误信提示信息 //span[contains(text(),"机房错误")]
+        self.duplicatename_error = ('xpath', '//span[contains(text(),"创建机房错误")]')
+
+        # 编辑按钮框css定位信息 .ant-table-tbody>tr:nth-child(2)>td:nth-child(5)>button:nth-child(1)
+        self.edit_button = ('css_selector', '.ant-table-tbody>tr:nth-child(5)>td:nth-child(5)>button:nth-child(1)')
+
+        # 权限分配按钮css定位信息 .ant-table-tbody>tr:nth-child(2)>td:nth-child(5)>button:nth-child(2)
+        self.assign_permission_button = ('css_selector', '.ant-table-tbody>tr:nth-child(5)>td:nth-child(5)>button:nth-child(1)')

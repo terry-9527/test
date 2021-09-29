@@ -1,5 +1,5 @@
 from WebUI_ops.common import keywords
-from WebUI_ops.page_location.login_location.login_location import LoginLocation
+from WebUI_ops.page_location.login_location.login_lct import LoginLocation
 from WebUI_ops.common.keywords import KeyWords
 
 class LoginOperation(KeyWords):

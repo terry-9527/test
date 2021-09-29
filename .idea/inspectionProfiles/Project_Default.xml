@@ -5,6 +5,7 @@
       <option name="ignoredPackages">
         <list>
           <option value="openpyxl" />
+          <option value="pandas" />
         </list>
       </option>
     </inspection_tool>

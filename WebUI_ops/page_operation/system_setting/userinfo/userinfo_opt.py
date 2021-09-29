@@ -2,7 +2,7 @@
 定义用户信息页面的操作，封装到一个类中
 '''
 from WebUI_ops.common import keywords
-from WebUI_ops.page_location.system_setting.userinfo.userinfo import UserInfoLocation
+from WebUI_ops.page_location.system_setting.userinfo.userinfo_lct import UserInfoLocation
 from WebUI_ops.common.keywords import KeyWords
 from WebUI_ops.page_operation.login_opt.login_opt import LoginOperation
 

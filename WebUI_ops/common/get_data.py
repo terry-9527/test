@@ -8,12 +8,16 @@ import pandas
 class GetData():
 
     # 读取通用配置文件
-    def getConfigData(self, section=None, option=None):
-        # config = configparser.ConfigParser()
+    def getConfigData(self, section=None, option=None, file=None):
+        rootpath = getpathInfo()
+        if not file:
+            configpath = os.path.join(rootpath, 'config', 'config.ini')
+        else:
+            configpath = os.path.join(rootpath, 'config', file)
         config = configparser.RawConfigParser()
-        data = config.read(r'E:\Appium_project\operation_system\config\config.ini')
-        self.res = config.get(section, option)
-        return self.res
+        config.read(configpath, encoding='utf-8')
+        self.result = config.get(section, option)
+        return self.result
 
     def getYamlData(self, file):
         # self.path = path
@@ -31,29 +35,63 @@ class GetData():
             f.close()
         return case_data
 
-    def getExcel(self, file):
+    def getExcel(self, sheetname, file):
         root_path = getpathInfo()
         file_path = os.path.join(root_path, "testdata", file)
         workbook = load_workbook(file_path)
-        sheetname = workbook.sheetnames  # 获取工作表名称
-        sheet = workbook[sheetname[0]]  # 执行使用哪个工作表
+        # sheetname = workbook.sheetnames  # 获取工作表名称
+        sheet = workbook[sheetname]  # 执行使用哪个工作表
         rows = sheet.rows  # 取出所有行的数据
         cases = []
         # 遍历每一行的数据
         for row in rows:
             list1 = []
-            for col in row:  # 获取当前行每一个单元格，单元格的内容需要用value
-                list1.append(col.value)
-            cases.append(list1)
-        # print(cases[1:])
-        return cases[1:]
+            if row[len(row) - 2].value == "True":  # 判断该条用例是否需要执行,execute最后一列的值为True则执行，进行数据读取
+                for col in row:
+                    if not col.value:  # 处理空单元格，直接添加None
+                        list1.append(col.value)
+                    elif col.value.startswith('{') and col.value.endswith('}'):
+                        list1.append(eval(col.value))  # 获取当前行每一个单元格，单元格的内容需要用value
+                    else:
+                        list1.append(col.value)
+                cases.append(list1)
+        return cases
+
+    # Excel写入数据
+    def writeExcel(self, file, case_id=None, testresult=None):
+        root_path = getpathInfo()
+        file_path = os.path.join(root_path, "testdata", file)
+        workbook = load_workbook(file_path)
+        sheetname = workbook.sheetnames  # 获取工作表名称
+        sheet = workbook[sheetname[0]]  # 执行使用哪个工作表
+        cols = sheet.columns
+        col = [col for col in cols]
+        list1 = []
+        for row in col[0]:
+            list1.append(row.value)
+        i = 0
+        for id in list1:
+            if case_id == id:
+                i += 1
+                break
+            i += 1
+        # print(i)
+        sheet.cell(i, sheet.max_column).value = testresult
+        # print(sheet.cell(i, sheet.max_column).value)
+        workbook.save(file_path)
 
 
 if __name__ == '__main__':
     data = GetData()
     # result = data.getYamlData('login.yaml')
     # print(result)
-    cases = data.getExcel('machineroominfo.xlsx')
+    # cases = data.getExcel('logincase.xlsx')
+    cases = data.getExcel('新建机房信息','machineroominfo.xlsx')
     print(cases)
-    print(eval(cases[0][2])['check'])
+    # print(cases[0])
     # print(type(eval(cases[2][2])))
+    # data.writeExcel('machineroominfo.xlsx', "add-machineroom-007","pass")
+    # res = data.getConfigData('log','level')
+    # print(res)
+    # sqlfiles = [i for i in os.listdir('./') if i.endswith('.py')]
+    # print(sqlfiles)

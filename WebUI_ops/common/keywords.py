@@ -9,11 +9,14 @@
 清除输入框： clear
 '''
 import time
+import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
-
+from WebUI_ops.common.get_data import GetData
 # 初始化浏览器，若传入的浏览器驱动存在，则启动对应的浏览器，否则默认启动谷歌浏览器
+
 def init_driver(driver_type):
     try:
         driver = getattr(webdriver, driver_type)()
@@ -22,8 +25,6 @@ def init_driver(driver_type):
         print("输入的浏览器驱动不可用，正在为您启动Google浏览器", e)
         driver = webdriver.Chrome()
         return driver
-
-
 
 
 class KeyWords():
@@ -74,14 +75,29 @@ class KeyWords():
     def clear(self, locator_type, location):
         self.locator(locator_type, location).clear()
 
+    # 当clear()方法无法清空输入框内容时:
+    def force_clear(self, locator_type, location):
+        element = self.locator(locator_type, location)
+        element.send_keys(Keys.CONTROL,'a')
+        element.send_keys(Keys.DELETE)
+
     # 点击元素: click_element
     def click_element(self, locator_type, location):
         self.locator(locator_type, location).click()
 
     # 获取元素的文本
-    def get_text(self,locator_type, location):
-        text = self.locator(locator_type,location)
+    def get_text(self, locator_type, location):
+        text = self.locator(locator_type, location)
         return text
+
+    # def assert_result(self, expect, actual, filename):
+    #     try:
+    #         self.assertEqual(expect, actual)
+    #         self.opt1.click_success_confirm_button()
+    #         GetData().writeExcel(filename, params[0], testresult="PASS")
+    #     except Exception as e:
+    #         GetData().writeExcel(filename, params[0], testresult="FAILED")
+    #         raise e
 
     # 设置等待时间
     def wait(self, second):
@@ -99,5 +115,7 @@ if __name__ == '__main__':
     kd.open_browser(url)
     kd.input_text('name', 'wd', '倚天屠龙记')
     kd.click_element('id', 'su')
+    kd.wait(2)
+    kd.clear('name', 'wd')
     kd.wait(2)
     kd.close_browser()
