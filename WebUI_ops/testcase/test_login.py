@@ -1,8 +1,6 @@
 """
     测试首页的登陆功能
 """
-from selenium import webdriver
-from selenium.webdriver.common.by import By
 import unittest
 
 from WebUI_ops.common import keywords

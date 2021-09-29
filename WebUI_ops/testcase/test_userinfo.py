@@ -35,6 +35,7 @@ class UserInfo(unittest.TestCase):
         self.userinfo_opt.wait(2)
         el1 = self.driver.find_elements(By.XPATH, '//span[@class="ant-select-selection-item"]')[1]
         el1.click()
+<<<<<<< HEAD
         self.userinfo_opt.wait(2)
         self.driver.find_elements_by_css_selector(".ant-select-item")[random.randint(1,8)].click()
         self.userinfo_opt.wait(2)
@@ -42,6 +43,12 @@ class UserInfo(unittest.TestCase):
         self.userinfo_opt.wait(2)
         self.driver.find_elements_by_css_selector(".ant-select-item")[random.randint(9,13)].click()
         self.userinfo_opt.wait(2)
+=======
+        self.userinfo_opt.wait(1)
+        el1.click()
+
+
+>>>>>>> tmp
 
 if __name__ == '__main__':
     unittest.main()
