@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdef7359-ca6b-4b15-96ce-0249ce573cf1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/common/get_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/common/get_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/common/keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/common/keywords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/page_location/enginroom/machineroominfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/page_location/enginroom/machineroominfo_lct.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/page_location/login_location/login_location.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/page_location/login_location/login_lct.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/userinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/userinfo_lct.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/page_operation/enginroom/machineroominfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/page_operation/enginroom/machineroominfo_opt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/page_operation/login_opt/login_opt.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/page_operation/login_opt/login_opt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/page_operation/system_setting/userinfo/userinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/page_operation/system_setting/userinfo/userinfo_opt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/testcase/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/testcase/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/testcase/test_machineroom_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/testcase/test_machineroom_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/testdata/logincase.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/testdata/logincase.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/testdata/machineroominfo.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/testdata/machineroominfo.xlsx" afterDir="false" />
-    </list>
+    <list default="true" id="bdef7359-ca6b-4b15-96ce-0249ce573cf1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -405,12 +389,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.get_data" />
-      <item itemvalue="Python tests.terry_new" />
-      <item itemvalue="Python.machineroominfo_opt" />
       <item itemvalue="Python.demo" />
+      <item itemvalue="Python.get_data" />
+      <item itemvalue="Python.machineroominfo_opt" />
       <item itemvalue="Python tests.Unittests for test_machineroom_info.TestMachineRoomInfo.test_edit_machineroom" />
       <item itemvalue="Python tests.Unittests in test_machineroom_info.py" />
+      <item itemvalue="Python tests.terry_new" />
     </list>
     <recent_temporary>
       <list>
