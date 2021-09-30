@@ -9,12 +9,10 @@
 清除输入框： clear
 '''
 import time
-import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-from WebUI_ops.common.get_data import GetData
 # 初始化浏览器，若传入的浏览器驱动存在，则启动对应的浏览器，否则默认启动谷歌浏览器
 
 def init_driver(driver_type):
@@ -28,7 +26,8 @@ def init_driver(driver_type):
 
 
 class KeyWords():
-    def __init__(self, driver):
+
+    def __init__(self,driver):
         self.driver = driver
         self.driver.implicitly_wait(10)
         self.driver.maximize_window()
@@ -140,7 +139,7 @@ class KeyWords():
 
 if __name__ == '__main__':
     url = "https://www.baidu.com"
-    driver = init_driver("Chrome")
+    driver = webdriver.Chrome()
     kd = KeyWords(driver)
     kd.open_browser(url)
     kd.input_text('name', 'wd', '倚天屠龙记')
