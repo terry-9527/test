@@ -1,6 +1,8 @@
 '''
 定义用户信息页面的操作，封装到一个类中
 '''
+import random
+
 from WebUI_ops.common import keywords
 from WebUI_ops.page_location.system_setting.userinfo.userinfo_lct import UserInfoLocation
 from WebUI_ops.common.keywords import KeyWords
@@ -9,9 +11,18 @@ from WebUI_ops.page_operation.login_opt.login_opt import LoginOperation
 
 class UserInfoOperation(KeyWords):
 
-    def __init__(self, driver):
-        super(UserInfoOperation, self).__init__(driver)
-        self.lct = UserInfoLocation()
+    lct = UserInfoLocation()
+    def add_user(self):
+        # 点击系统设置 ('xpath', "//span[text()='系统设置']")
+        self.click_element(*self.lct.system_setting)
+        self.wait(1)
+        # 点击用户信息
+        self.click_element(*self.lct.userinfo)
+        self.wait(1)
+        # 点击新建用户
+        self.click_element(*self.lct.new_user)
+        self.wait(1)
+
 
     # 点击系统设置 ('xpath', "//span[text()='系统设置']")
     def click_system_setting(self):
@@ -25,9 +36,11 @@ class UserInfoOperation(KeyWords):
     def click_new_user(self):
         self.click_element(*self.lct.new_user)
 
-    # 输入所属用户,暂时定位不到
+    # 输入所属用户
     def input_customer(self):
-        pass
+        self.click_elements(*self.lct.customer,list_number=1)
+        self.wait(1)
+        self.click_elements(*self.lct.select_customer,list_number=random.randint(1,8))
 
     # 输入用户名 多个同属性的元素定位方式
     def input_username(self, username):
@@ -42,10 +55,11 @@ class UserInfoOperation(KeyWords):
     def input_email(self, email):
         self.input_text(*self.lct.email, email)
 
-    # 输入角色，暂时无法定位
-    def input_role(self, role):
-        # self.input_text(*self.lct.role, role)
-        pass
+    # 输入角色
+    def input_role(self):
+        self.click_elements(*self.lct.role,list_number=2)
+        self.wait(1)
+        self.click_elements(*self.lct.select_role,list_number=random.randint(9,13))
 
     # 输入密码
     def input_password(self, password):

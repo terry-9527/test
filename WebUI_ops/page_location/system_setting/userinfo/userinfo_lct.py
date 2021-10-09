@@ -11,6 +11,8 @@ class UserInfoLocation():
         self.new_user = ('xpath', "//span[text()='新建用户']")
         # 所属客户下拉框 (By.XPATH, '//span[@class="ant-select-selection-item"]')
         self.customer = ('xpath', "//span[@class='ant-select-selection-item']")
+        # 选择所属客户
+        self.select_customer = ('css_selector', '.ant-select-item')
         # 用户名输入框
         self.username = ('id', "name")
         # 手机号输入框
@@ -19,6 +21,8 @@ class UserInfoLocation():
         self.email = ('id', "email")
         # 角色输入框
         self.role = ('xpath', "//span[@class='ant-select-selection-item']")
+        # 选择角色
+        self.select_role = ('css_selector', '.ant-select-item')
         # 密码输入框
         self.password = ('xpath', "//input[@id='password']")
         # 取消按钮
@@ -28,4 +32,4 @@ class UserInfoLocation():
         # X按钮
         self.quit_button = ('xpath', "//span[@class='ant-modal-close-x']")
         # 新建用户成功弹窗文本内容
-        self.success_msg = ('xpath','//*[contains(text(),"我知道了")]')
+        self.success_msg = ('xpath', '//*[contains(text(),"我知道了")]')

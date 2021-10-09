@@ -114,6 +114,9 @@ class KeyWords():
     def click_element(self, locator_type, location):
         self.locator(locator_type, location).click()
 
+    def click_elements(self, locator_type, location, list_number=1):
+        self.locators(locator_type, location)[list_number].click()
+
     # 获取元素的文本
     def get_text(self, locator_type, location):
         text = self.locator(locator_type, location)
