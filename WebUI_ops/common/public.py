@@ -1,4 +1,4 @@
-from random import random
+import random
 from selenium import webdriver
 from WebUI_ops.common.get_data import GetData
 from WebUI_ops.page_operation.login_opt.login_opt import LoginOperation
@@ -20,17 +20,16 @@ class Public():
         self.opt = LoginOperation(self.driver)
         self.opt.login(phone, password)
 
-    def random_phone(self):
-        list1 = ["135", "182", "147"]
-        a = [random.choice("0123456789") for i in range(8)]
-        print(a)
-        phone = random.choice(list1) + "".join(a)
-        print("-".join(a))
-        return phone
+def random_phone():
+    list1 = ["135", "182", "147"]
+    a = [random.choice("0123456789") for i in range(8)]
+    phone = random.choice(list1) + "".join(a)
+    return phone
 
 
 if __name__ == '__main__':
     driver = webdriver.Chrome()
     public = Public(driver)
     print(public.password, public.phone)
-    public.login()
+    # public.login()
+    # print(random_phone())
