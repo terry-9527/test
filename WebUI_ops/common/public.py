@@ -1,31 +1,36 @@
-from selenium.webdriver.common.by import By
+from random import random
 from selenium import webdriver
+from WebUI_ops.common.get_data import GetData
 from WebUI_ops.page_operation.login_opt.login_opt import LoginOperation
-from time import sleep
 
 
 class Public():
+    phone = GetData().getConfigData('test_env', 'phone')
+    password = GetData().getConfigData('test_env', 'password')
 
     def __init__(self, driver):
         self.driver = driver
         self.driver.implicitly_wait(10)
 
-    def login(self, phone='18276762767', password='aa123456'):
+    def login(self, phone=phone, password=password):
         self.url = "https://opstest.arsyun.com/#/"
         # 打开首页登录界面
         self.driver.get(url=self.url)
         self.driver.maximize_window()
         self.opt = LoginOperation(self.driver)
-        # 输入手机号码
-        self.opt.input_phone(phone)
-        # 输入密码
-        self.opt.input_pwd(password)
-        # 点击登陆按钮
-        sleep(1)
-        self.opt.click_login_button()
+        self.opt.login(phone, password)
+
+    def random_phone(self):
+        list1 = ["135", "182", "147"]
+        a = [random.choice("0123456789") for i in range(8)]
+        print(a)
+        phone = random.choice(list1) + "".join(a)
+        print("-".join(a))
+        return phone
 
 
 if __name__ == '__main__':
-    public = Public()
+    driver = webdriver.Chrome()
+    public = Public(driver)
+    print(public.password, public.phone)
     public.login()
-    public.driver.find_element()

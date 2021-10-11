@@ -32,4 +32,15 @@ class UserInfoLocation():
         # X按钮
         self.quit_button = ('xpath', "//span[@class='ant-modal-close-x']")
         # 新建用户成功弹窗文本内容
-        self.success_msg = ('xpath', '//*[contains(text(),"我知道了")]')
+        self.success_msg = ('xpath', '//span[text()="新建用户成功"]')
+        # 用户名为空提示语
+        self.noname_errmsg = ('xpath', '//div[text()="请输入用户名"]')
+        # 手机号为空提示语
+        self.nophone_errmsg = ('xpath', '//div[text()="请输入手机号"]')
+        # 邮箱为空提示语
+        self.noemail_errmsg = ('xpath', '//div[text()="请输入邮箱"]')
+        # 密码为空提示语
+        self.nopassword_errmsg = ('xpath', '//div[text()="请输入密码"]')
+
+
+

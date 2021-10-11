@@ -2,3 +2,7 @@
 "2021-09-29 14:43:09,273 - CRITICAL - logger.py:54 - this is a critical log"
 "2021-09-29 15:10:47,315 - ERROR - logger.py:54 - this is a error log"
 "2021-09-29 15:10:47,315 - CRITICAL - logger.py:55 - this is a critical log"
+"2021-10-11 17:40:48,238 - ERROR - logger.py:53 - this is a error log"
+"2021-10-11 17:40:48,238 - CRITICAL - logger.py:54 - this is a critical log"
+"2021-10-11 17:41:12,837 - ERROR - logger.py:53 - this is a error log"
+"2021-10-11 17:41:12,837 - CRITICAL - logger.py:54 - this is a critical log"

@@ -1,7 +1,6 @@
 '''
 机房信息页面的测试用例设计
 '''
-import os
 import unittest
 
 from WebUI_ops.common import keywords
@@ -29,39 +28,37 @@ class TestMachineRoomInfo(unittest.TestCase):
         self.opt1.wait(2)
         self.opt1.close_browser()
 
-    # cases = GetData().getExcel('新建机房信息', filename)
+    cases = GetData().getExcel('新建机房信息', filename)
 
-    # @data(*cases)
-    # def test_add_machineroom(self, params):
-    #     # 登陆用户，输入用户名和密码
-    #     self.lg.input_phone("18276762767")
-    #     self.lg.input_pwd('aa123456')
-    #     self.lg.click_login_button()
-    #     self.lg.wait(2)
-    #     # 点击系统信息
-    #     self.ui.click_system_setting()
-    #     self.ui.wait(2)
-    #     # 点击机房信息
-    #     self.opt1.click_engin_room_info()
-    #     self.opt1.wait(1)
-    #     # 点击新建机房
-    #     self.opt1.click_new_engin_room()
-    #     self.opt1.wait(1)
-    #     # 输入机房名称
-    #     self.opt1.input_engin_room_name(params[2]['machineroom_name'])
-    #     self.opt1.wait(1)
-    #     # 输入机房所在地址
-    #     self.opt1.input_address(params[2]['address'])
-    #     self.opt1.wait(1)
-    #     # 输入域名
-    #     self.opt1.input_domain(params[2]['domain'])
-    #     self.opt1.wait(1)
-    #     # 勾选算力机调度是否可用复选框
-    #     self.opt1.click_scheduling_checkbox(params[2]['check'])
-    #     self.opt1.wait(1)
-    #     # 点击确定按钮
-    #     self.opt1.click_confirm_button()
-    #     self.opt1.wait(2)
+    @data(*cases)
+    def test_add_machineroom(self, params):
+        # 登陆用户，输入用户名和密码
+        self.lg.login("18276762767", "aa123456")
+        self.lg.wait(2)
+        # 点击系统信息
+        self.ui.click_system_setting()
+        self.ui.wait(2)
+        # 点击机房信息
+        self.opt1.click_engin_room_info()
+        self.opt1.wait(1)
+        # 点击新建机房
+        self.opt1.click_new_engin_room()
+        self.opt1.wait(1)
+        # 输入机房名称
+        self.opt1.input_engin_room_name(params[2]['machineroom_name'])
+        self.opt1.wait(1)
+        # 输入机房所在地址
+        self.opt1.input_address(params[2]['address'])
+        self.opt1.wait(1)
+        # 输入域名
+        self.opt1.input_domain(params[2]['domain'])
+        self.opt1.wait(1)
+        # 勾选算力机调度是否可用复选框
+        self.opt1.click_scheduling_checkbox(params[2]['check'])
+        self.opt1.wait(1)
+        # 点击确定按钮
+        self.opt1.click_confirm_button()
+        self.opt1.wait(2)
     #     # 断言
     #     if params[0] == "add-machineroom-001":
     #         try:
@@ -136,9 +133,7 @@ class TestMachineRoomInfo(unittest.TestCase):
     cases = GetData().getExcel('编辑机房信息', filename)
     @data(*cases)
     def test_edit_machineroom(self, params):
-        self.lg.input_phone("18276762767")
-        self.lg.input_pwd('aa123456')
-        self.lg.click_login_button()
+        self.lg.login("18276762767", "aa123456")
         self.lg.wait(2)
         # 点击系统信息
         self.ui.click_system_setting()

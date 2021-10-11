@@ -12,7 +12,7 @@ from WebUI_ops.page_operation.login_opt.login_opt import LoginOperation
 class UserInfoOperation(KeyWords):
 
     lct = UserInfoLocation()
-    def add_user(self):
+    def click_new_user_button(self):
         # 点击系统设置 ('xpath', "//span[text()='系统设置']")
         self.click_element(*self.lct.system_setting)
         self.wait(1)
@@ -40,7 +40,7 @@ class UserInfoOperation(KeyWords):
     def input_customer(self):
         self.click_elements(*self.lct.customer,list_number=1)
         self.wait(1)
-        self.click_elements(*self.lct.select_customer,list_number=random.randint(1,8))
+        self.click_elements(*self.lct.select_customer,list_number=random.randint(0,7))
 
     # 输入用户名 多个同属性的元素定位方式
     def input_username(self, username):
@@ -59,7 +59,7 @@ class UserInfoOperation(KeyWords):
     def input_role(self):
         self.click_elements(*self.lct.role,list_number=2)
         self.wait(1)
-        self.click_elements(*self.lct.select_role,list_number=random.randint(9,13))
+        self.click_elements(*self.lct.select_role,list_number=random.randint(8,12))
 
     # 输入密码
     def input_password(self, password):
@@ -74,16 +74,32 @@ class UserInfoOperation(KeyWords):
     def click_alert_confirm_button(self):
         self.click_element(*self.lct.success_msg)
 
+    # 获取创建成功提示文本信息
+    def get_success_msg(self):
+        return self.locator(*self.lct.success_msg).get_attribute("textContent")
+
+    # 获取用户名为空提示语
+    def get_noname_errmsg(self):
+        return self.locator(*self.lct.noname_errmsg).get_attribute("textContent")
+
+    # 获取手机号为空提示语
+    def get_nophone_errmsg(self):
+        return self.locator(*self.lct.nophone_errmsg).get_attribute("textContent")
+
+    # 获取邮箱为空提示语
+    def get_noemail_errmsg(self):
+        return self.locator(*self.lct.noemail_errmsg).get_attribute("textContent")
+
+    # 获取密码为空提示语
+    def get_nopassword_errmsg(self):
+        return self.locator(*self.lct.nopassword_errmsg).get_attribute("textContent")
+
 
 if __name__ == '__main__':
     url = "https://opstest.arsyun.com/#/"
     driver = keywords.init_driver("Chrome")
     lg = LoginOperation(driver)
-    lg.open_browser(url)
-    lg.input_phone("18276762767")
-    lg.input_pwd('aa123456')
-    lg.click_login_button()
-    lg.wait(2)
+    lg.login("18276762767","aa123456")
     ui = UserInfoOperation(driver)
     ui.click_system_setting()
     ui.wait(2)
@@ -93,7 +109,7 @@ if __name__ == '__main__':
     ui.wait(1)
     ui.input_username('aaaaaa')
     ui.wait(1)
-    ui.input_phone('13388889999')
+    ui.input_phone('13388881111')
     ui.wait(2)
     ui.input_email('88888@qq.com')
     ui.wait(2)
@@ -101,5 +117,7 @@ if __name__ == '__main__':
     ui.wait(2)
     ui.click_confirm_button()
     ui.wait(2)
-    ui.click_alert_confirm_button()
+    print(ui.get_success_msg())
+
+    # ui.click_alert_confirm_button()
     # ui.close_browser()

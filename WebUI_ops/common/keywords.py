@@ -12,6 +12,8 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from WebUI_ops.page_location.login_location.login_lct import LoginLocation
+
 
 # 初始化浏览器，若传入的浏览器驱动存在，则启动对应的浏览器，否则默认启动谷歌浏览器
 
@@ -27,10 +29,11 @@ def init_driver(driver_type):
 
 class KeyWords():
 
-    def __init__(self,driver):
+    def __init__(self, driver):
         self.driver = driver
         self.driver.implicitly_wait(10)
         self.driver.maximize_window()
+        self.login_lct = LoginLocation()
 
     # 打开浏览器
     def open_browser(self, url):
@@ -107,7 +110,7 @@ class KeyWords():
     # 当clear()方法无法清空输入框内容时:
     def force_clear(self, locator_type, location):
         element = self.locator(locator_type, location)
-        element.send_keys(Keys.CONTROL,'a')
+        element.send_keys(Keys.CONTROL, 'a')
         element.send_keys(Keys.DELETE)
 
     # 点击元素: click_element
@@ -138,6 +141,19 @@ class KeyWords():
     # 关闭浏览器
     def close_browser(self):
         self.driver.quit()
+
+    def login(self, phone, password):
+        # 输入手机号码
+        self.clear(*self.login_lct.phone)
+        self.input_text(*self.login_lct.phone, phone)
+        self.wait(1)
+        # 输入密码
+        self.clear(*self.login_lct.password)
+        self.input_text(*self.login_lct.password, password)
+        self.wait(1)
+        # 点击登陆按钮
+        self.click_element(*self.login_lct.login_button)
+        self.wait(1)
 
 
 if __name__ == '__main__':

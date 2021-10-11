@@ -20,18 +20,13 @@ class GetData():
         return self.result
 
     def getYamlData(self, file):
-        # self.path = path
-        root_dir = os.path.dirname(os.path.abspath(__file__))
-        # print(root_dir)
-        self.file_path = os.path.abspath(os.path.join(root_dir, '..')) + '\\data\\' + file
-        # print(self.file_path)
-
-        with open(self.file_path, 'r', encoding='utf-8') as f:
-            self.yaml_data = yaml.load(f, Loader=yaml.FullLoader)
+        root_dir = getpathInfo()
+        file_path = os.path.join(root_dir, 'testdata', file)
+        with open(file_path, 'r', encoding='utf-8') as f:
+            yaml_data = yaml.load(f, Loader=yaml.FullLoader) # 读取yaml文件内容，返回dict数据
             case_data = []
-            for case in self.yaml_data.values():
+            for case in yaml_data.values():
                 case_data.append(case)
-            # print(case_data)
             f.close()
         return case_data
 
@@ -82,15 +77,9 @@ class GetData():
 
 if __name__ == '__main__':
     data = GetData()
-    # result = data.getYamlData('login.yaml')
+    # result = data.getYamlData('test.yaml')
     # print(result)
     # cases = data.getExcel('logincase.xlsx')
-    cases = data.getExcel('新建机房信息','machineroominfo.xlsx')
+    cases = data.getExcel('adduser', 'userinfo.xlsx')
     print(cases)
-    # print(cases[0])
-    # print(type(eval(cases[2][2])))
-    # data.writeExcel('machineroominfo.xlsx', "add-machineroom-007","pass")
-    # res = data.getConfigData('log','level')
-    # print(res)
-    # sqlfiles = [i for i in os.listdir('./') if i.endswith('.py')]
-    # print(sqlfiles)
+
