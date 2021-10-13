@@ -12,7 +12,6 @@ def scanfile(path):
     for root, dirs, files in os.walk(os.path.join(getpathInfo(),path)):
         for file in files:
             if not file.startswith('__'):
-                # print(os.path.join(root,file))
                 list1.append(os.path.join(root,file))
         # for dir in dirs:
         #     print(dir)
@@ -29,10 +28,14 @@ def getfilepath(filename):
     '''
     root_dir = getpathInfo()
     files = scanfile(root_dir)
+    n =0
     for file in files:
         if filename == os.path.split(file)[1]:
-            return print(file)
-        
+            n+=1
+            return file
+
+    if n == 0:
+        return "no such file"
 
 
 
@@ -43,4 +46,5 @@ if __name__ == '__main__':
     # path = getfilepath('page_location\login_location','login_lct.py')
     # print(path)
     # scanfile('common')
-    getfilepath('get_data.py')
+    g = getfilepath('login_opt.py')
+    print(g)

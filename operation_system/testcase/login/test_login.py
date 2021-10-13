@@ -19,7 +19,6 @@ class Login(unittest.TestCase):
         pass
 
     @data(*GetData().getYamlData('login.yaml'))
-    # @unpack
     def test_case01(self, args):
         self.url = args['url']
         self.params = args['params']

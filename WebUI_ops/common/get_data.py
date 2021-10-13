@@ -8,20 +8,20 @@ import pandas
 class GetData():
 
     # 读取通用配置文件
-    def getConfigData(self, section=None, option=None, file=None):
+    def getConfigData(self, section=None, option=None, filename=None):
         rootpath = getpathInfo()
-        if not file:
+        if not filename:
             configpath = os.path.join(rootpath, 'config', 'config.ini')
         else:
-            configpath = os.path.join(rootpath, 'config', file)
+            configpath = os.path.join(rootpath, 'config', filename)
         config = configparser.RawConfigParser()
         config.read(configpath, encoding='utf-8')
         self.result = config.get(section, option)
         return self.result
 
-    def getYamlData(self, file):
+    def getYamlData(self, filename):
         root_dir = getpathInfo()
-        file_path = os.path.join(root_dir, 'testdata', file)
+        file_path = os.path.join(root_dir, 'testdata', filename)
         with open(file_path, 'r', encoding='utf-8') as f:
             yaml_data = yaml.load(f, Loader=yaml.FullLoader) # 读取yaml文件内容，返回dict数据
             case_data = []
@@ -52,9 +52,9 @@ class GetData():
         return cases
 
     # Excel写入数据
-    def writeExcel(self, file, case_id=None, testresult=None):
+    def writeExcel(self, filename, case_id=None, testresult=None):
         root_path = getpathInfo()
-        file_path = os.path.join(root_path, "testdata", file)
+        file_path = os.path.join(root_path, "testdata", filename)
         workbook = load_workbook(file_path)
         sheetname = workbook.sheetnames  # 获取工作表名称
         sheet = workbook[sheetname[0]]  # 执行使用哪个工作表
@@ -69,10 +69,19 @@ class GetData():
                 i += 1
                 break
             i += 1
-        # print(i)
         sheet.cell(i, sheet.max_column).value = testresult
-        # print(sheet.cell(i, sheet.max_column).value)
         workbook.save(file_path)
+
+    def read_sqls(self,filename):
+        root_path = getpathInfo()
+        file = os.path.join(root_path, "testdata", filename)
+        sqls = []
+        with open(file,'r',encoding='utf-8') as stream:
+            for line in stream.readlines():
+                if not len(line.strip()) or line.startswith('--'):
+                    continue
+                sqls.append(line.strip())
+        return sqls
 
 
 if __name__ == '__main__':
@@ -80,6 +89,8 @@ if __name__ == '__main__':
     # result = data.getYamlData('test.yaml')
     # print(result)
     # cases = data.getExcel('logincase.xlsx')
-    cases = data.getExcel('adduser', 'userinfo.xlsx')
-    print(cases)
+    # cases = data.getExcel('adduser', 'userinfo.xlsx')
+    # print(cases)
+    sqls = data.read_sqls('initsqls.txt')
+    print(sqls)
 

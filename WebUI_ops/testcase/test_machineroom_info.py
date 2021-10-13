@@ -4,6 +4,7 @@
 import unittest
 
 from WebUI_ops.common import keywords
+from WebUI_ops.common.base_util import BaseUtil
 from WebUI_ops.page_operation.enginroom.machineroominfo_opt import MachineRoomInfoOperation
 from WebUI_ops.page_operation.login_opt.login_opt import LoginOperation
 from WebUI_ops.page_operation.system_setting.userinfo.userinfo_opt import UserInfoOperation
@@ -14,7 +15,7 @@ filename = 'machineroominfo.xlsx'
 
 
 @ddt
-class TestMachineRoomInfo(unittest.TestCase):
+class TestMachineRoomInfo(BaseUtil):
 
     def setUp(self):
         self.driver = keywords.init_driver("Chrome")
@@ -23,6 +24,7 @@ class TestMachineRoomInfo(unittest.TestCase):
         self.opt1 = MachineRoomInfoOperation(self.driver)
         self.url = "https://opstest.arsyun.com/#/"
         self.lg.open_browser(self.url)
+
 
     def tearDown(self):
         self.opt1.wait(2)
@@ -59,77 +61,77 @@ class TestMachineRoomInfo(unittest.TestCase):
         # 点击确定按钮
         self.opt1.click_confirm_button()
         self.opt1.wait(2)
-    #     # 断言
-    #     if params[0] == "add-machineroom-001":
-    #         try:
-    #             self.assertEqual(params[3]['success_msg'], self.opt1.get_success_msg())
-    #             self.opt1.click_success_confirm_button()
-    #             GetData().writeExcel(filename, params[0], testresult="PASS")
-    #         except Exception as e:
-    #             GetData().writeExcel(filename, params[0], testresult="FAILED")
-    #             raise e
-    #     elif params[0] == "add-machineroom-002":
-    #         try:
-    #             self.assertEqual(params[3]['success_msg'], self.opt1.get_success_msg())
-    #             self.opt1.click_success_confirm_button()
-    #             GetData().writeExcel(filename, params[0], testresult="PASS")
-    #         except Exception as e:
-    #             GetData().writeExcel(filename, params[0], testresult="FAILED")
-    #             raise e
-    #
-    #     elif params[0] == "add-machineroom-003":
-    #         try:
-    #             self.assertEqual(params[3]['success_msg'], self.opt1.get_success_msg())
-    #             self.opt1.click_success_confirm_button()
-    #             GetData().writeExcel(filename, params[0], testresult="PASS")
-    #         except Exception as e:
-    #             GetData().writeExcel(filename, params[0], testresult="FAILED")
-    #             raise e
-    #
-    #     elif params[0] == "add-machineroom-004":
-    #         try:
-    #             self.assertEqual(params[3]['error_msg'], self.opt1.get_machineroom_noname_msg())
-    #             GetData().writeExcel(filename, params[0], testresult="PASS")
-    #         except Exception as e:
-    #             GetData().writeExcel(filename, params[0], testresult="FAILED")
-    #             raise e
-    #
-    #     elif params[0] == "add-machineroom-005":
-    #         try:
-    #             self.assertEqual(params[3]['error_msg'], self.opt1.get_machineroom_noaddress_msg())
-    #             GetData().writeExcel(filename, params[0], testresult="PASS")
-    #         except Exception as e:
-    #             GetData().writeExcel(filename, params[0], testresult="FAILED")
-    #             raise e
-    #
-    #     elif params[0] == "add-machineroom-006":
-    #         try:
-    #             self.assertEqual(params[3]['error_msg1'], self.opt1.get_machineroom_noname_msg())
-    #             self.assertEqual(params[3]['error_msg2'], self.opt1.get_machineroom_noaddress_msg())
-    #             GetData().writeExcel(filename, params[0], testresult="PASS")
-    #         except Exception as e:
-    #             GetData().writeExcel(filename, params[0], testresult="FAILED")
-    #             raise e
-    #
-    #     elif params[0] == "add-machineroom-007":
-    #         try:
-    #             self.assertIn(params[3]['error_msg'], self.opt1.get_duplicatename_error_msg())
-    #             self.opt1.click_success_confirm_button()
-    #             GetData().writeExcel(filename, params[0], testresult="PASS")
-    #         except Exception as e:
-    #             GetData().writeExcel(filename, params[0], testresult="FAILED")
-    #             raise e
-    #
-    #     elif params[0] == "add-machineroom-008":
-    #         try:
-    #             self.assertEqual(params[3]['success_msg'], self.opt1.get_success_msg())
-    #             self.opt1.click_success_confirm_button()
-    #             GetData().writeExcel(filename, params[0], testresult="PASS")
-    #         except Exception as e:
-    #             GetData().writeExcel(filename, params[0], testresult="FAILED")
-    #             raise e
-    #
-    # # 编辑机房信息
+        # 断言
+        if params[0] == "add-machineroom-001":
+            try:
+                self.assertEqual(params[3]['success_msg'], self.opt1.get_success_msg())
+                self.opt1.click_success_confirm_button()
+                GetData().writeExcel(filename, params[0], testresult="PASS")
+            except Exception as e:
+                GetData().writeExcel(filename, params[0], testresult="FAILED")
+                raise e
+        elif params[0] == "add-machineroom-002":
+            try:
+                self.assertEqual(params[3]['success_msg'], self.opt1.get_success_msg())
+                self.opt1.click_success_confirm_button()
+                GetData().writeExcel(filename, params[0], testresult="PASS")
+            except Exception as e:
+                GetData().writeExcel(filename, params[0], testresult="FAILED")
+                raise e
+
+        elif params[0] == "add-machineroom-003":
+            try:
+                self.assertEqual(params[3]['success_msg'], self.opt1.get_success_msg())
+                self.opt1.click_success_confirm_button()
+                GetData().writeExcel(filename, params[0], testresult="PASS")
+            except Exception as e:
+                GetData().writeExcel(filename, params[0], testresult="FAILED")
+                raise e
+
+        elif params[0] == "add-machineroom-004":
+            try:
+                self.assertEqual(params[3]['error_msg'], self.opt1.get_machineroom_noname_msg())
+                GetData().writeExcel(filename, params[0], testresult="PASS")
+            except Exception as e:
+                GetData().writeExcel(filename, params[0], testresult="FAILED")
+                raise e
+
+        elif params[0] == "add-machineroom-005":
+            try:
+                self.assertEqual(params[3]['error_msg'], self.opt1.get_machineroom_noaddress_msg())
+                GetData().writeExcel(filename, params[0], testresult="PASS")
+            except Exception as e:
+                GetData().writeExcel(filename, params[0], testresult="FAILED")
+                raise e
+
+        elif params[0] == "add-machineroom-006":
+            try:
+                self.assertEqual(params[3]['error_msg1'], self.opt1.get_machineroom_noname_msg())
+                self.assertEqual(params[3]['error_msg2'], self.opt1.get_machineroom_noaddress_msg())
+                GetData().writeExcel(filename, params[0], testresult="PASS")
+            except Exception as e:
+                GetData().writeExcel(filename, params[0], testresult="FAILED")
+                raise e
+
+        elif params[0] == "add-machineroom-007":
+            try:
+                self.assertIn(params[3]['error_msg'], self.opt1.get_duplicatename_error_msg())
+                self.opt1.click_success_confirm_button()
+                GetData().writeExcel(filename, params[0], testresult="PASS")
+            except Exception as e:
+                GetData().writeExcel(filename, params[0], testresult="FAILED")
+                raise e
+
+        elif params[0] == "add-machineroom-008":
+            try:
+                self.assertEqual(params[3]['success_msg'], self.opt1.get_success_msg())
+                self.opt1.click_success_confirm_button()
+                GetData().writeExcel(filename, params[0], testresult="PASS")
+            except Exception as e:
+                GetData().writeExcel(filename, params[0], testresult="FAILED")
+                raise e
+
+    # 编辑机房信息
     cases = GetData().getExcel('编辑机房信息', filename)
     @data(*cases)
     def test_edit_machineroom(self, params):
@@ -157,5 +159,5 @@ class TestMachineRoomInfo(unittest.TestCase):
         self.opt1.click_confirm_button()
 
 
-if __name__ == '__main__':
-    unittest.main()
+if __name__ == "__main__":
+    unittest.main("test_edit_machineroom")

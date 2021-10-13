@@ -3,6 +3,10 @@
 '''
 import random
 
+from selenium.webdriver import ActionChains
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
 from WebUI_ops.common import keywords
 from WebUI_ops.page_location.system_setting.userinfo.userinfo_lct import UserInfoLocation
 from WebUI_ops.common.keywords import KeyWords
@@ -44,15 +48,18 @@ class UserInfoOperation(KeyWords):
 
     # 输入用户名 多个同属性的元素定位方式
     def input_username(self, username):
-        self.clear(*self.lct.username)
+        self.locators(*self.lct.username)[1].send_keys(Keys.CONTROL, 'a')
+        self.locators(*self.lct.username)[1].send_keys(Keys.DELETE)
         self.locators(*self.lct.username)[1].send_keys(username)
 
     # 输入手机号
     def input_phone(self, phone):
+        self.force_clear(*self.lct.telephone)
         self.input_text(*self.lct.telephone, phone)
 
     # 输入邮箱
     def input_email(self, email):
+        self.force_clear(*self.lct.email)
         self.input_text(*self.lct.email, email)
 
     # 输入角色
@@ -63,7 +70,7 @@ class UserInfoOperation(KeyWords):
 
     # 输入密码
     def input_password(self, password):
-        self.clear(*self.lct.password)
+        self.force_clear(*self.lct.password)
         self.input_text(*self.lct.password, password)
 
     # 点击确定按钮
@@ -94,10 +101,14 @@ class UserInfoOperation(KeyWords):
     def get_nopassword_errmsg(self):
         return self.locator(*self.lct.nopassword_errmsg).get_attribute("textContent")
 
+    # 点击用户信息编辑按钮
+    def click_edit_button(self):
+        self.locator(*self.lct.edit_user_button).click()
 
 if __name__ == '__main__':
     url = "https://opstest.arsyun.com/#/"
     driver = keywords.init_driver("Chrome")
+    driver.get(url)
     lg = LoginOperation(driver)
     lg.login("18276762767","aa123456")
     ui = UserInfoOperation(driver)
@@ -105,19 +116,26 @@ if __name__ == '__main__':
     ui.wait(2)
     ui.click_userinfo()
     ui.wait(1)
-    ui.click_new_user()
+    ui.click_edit_button()
     ui.wait(1)
-    ui.input_username('aaaaaa')
+    element = driver.find_elements_by_css_selector('#name')
     ui.wait(1)
-    ui.input_phone('13388881111')
+    # ui.input_username("BeJson001")
     ui.wait(2)
-    ui.input_email('88888@qq.com')
+    ui.input_phone("18299997777")
     ui.wait(2)
-    ui.input_password('aa123456')
-    ui.wait(2)
-    ui.click_confirm_button()
-    ui.wait(2)
-    print(ui.get_success_msg())
+    # ui.click_new_user()
+    # ui.wait(1)
+    # ui.input_username('aaaaaa')
+    # ui.wait(1)
+    # ui.input_phone('13388881111')
+    # ui.wait(2)
+    # ui.input_email('88888@qq.com')
+    # ui.wait(2)
+    # ui.input_password('aa123456')
+    # ui.wait(2)
+    # ui.click_confirm_button()
+    # ui.wait(2)
 
     # ui.click_alert_confirm_button()
-    # ui.close_browser()
+    ui.close_browser()

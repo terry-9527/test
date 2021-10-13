@@ -125,14 +125,7 @@ class KeyWords():
         text = self.locator(locator_type, location)
         return text
 
-    # def assert_result(self, expect, actual, filename):
-    #     try:
-    #         self.assertEqual(expect, actual)
-    #         self.opt1.click_success_confirm_button()
-    #         GetData().writeExcel(filename, params[0], testresult="PASS")
-    #     except Exception as e:
-    #         GetData().writeExcel(filename, params[0], testresult="FAILED")
-    #         raise e
+
 
     # 设置等待时间
     def wait(self, second):

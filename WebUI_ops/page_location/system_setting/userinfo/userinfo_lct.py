@@ -13,7 +13,7 @@ class UserInfoLocation():
         self.customer = ('xpath', "//span[@class='ant-select-selection-item']")
         # 选择所属客户
         self.select_customer = ('css_selector', '.ant-select-item')
-        # 用户名输入框
+        # 用户名输入框 多元素有两个元素
         self.username = ('id', "name")
         # 手机号输入框
         self.telephone = ('id', "phone")
@@ -41,6 +41,11 @@ class UserInfoLocation():
         self.noemail_errmsg = ('xpath', '//div[text()="请输入邮箱"]')
         # 密码为空提示语
         self.nopassword_errmsg = ('xpath', '//div[text()="请输入密码"]')
-
+        # 用户信息编辑按钮 //span[contains(text(),'BeJson')]/../../td[6]//button[1]
+        self.edit_user_button = ('xpath', '//span[contains(text(),"BeJson")]/../../td[6]//button[1]')
+        # 用户信息删除按钮 //span[contains(text(),"BeJson")]/../../td[6]//button[2]
+        self.delete_user_button = ('xpath', '//span[contains(text(),"BeJson")]/../../td[6]//button[2]')
+        # 用户信息删除按钮 //span[contains(text(),"BeJson")]/../../td[6]//button[3]
+        self.assign_miner_button = ('xpath', '//span[contains(text(),"BeJson")]/../../td[6]//button[3]')
 
 
