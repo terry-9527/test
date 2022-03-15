@@ -60,8 +60,8 @@ class UserInfo(BaseUtil):
     cases = GetData().getExcel('edituser', 'userinfo.xlsx')
 
     @data(*cases)
-    def test_edit_userinfo(self, parmas):
-        caseinfo = "测试用例ID："+parmas[0] + " ：" + parmas[1]
+    def test_edit_userinfo(self, params):
+        caseinfo = "测试用例ID："+params[0] + " ：" + params[1]
         print(caseinfo)
         self.userinfo_opt = UserInfoOperation(self.driver)
         # 先进行登陆，输入手机号和密码
@@ -73,18 +73,22 @@ class UserInfo(BaseUtil):
         self.userinfo_opt.wait(1)
         self.userinfo_opt.click_edit_button()
         self.userinfo_opt.wait(1)
-        # 输入新的用户名
-        self.userinfo_opt.input_username(parmas[2]['username'])
-        self.userinfo_opt.wait(1)
-        # 输入新的手机号码
-        self.userinfo_opt.input_phone(parmas[2]['phone'])
-        self.userinfo_opt.wait(1)
-        # 输入新的email地址
-        self.userinfo_opt.input_email(parmas[2]['email'])
-        self.userinfo_opt.wait(1)
-        # 输入新的密码
-        self.userinfo_opt.input_password(parmas[2]['password'])
-        self.userinfo_opt.wait(1)
+        if params[0] == "edituser-001":
+            # 输入新的用户名
+            self.userinfo_opt.input_username(params[2]['username'])
+            self.userinfo_opt.wait(1)
+        if params[0] == "edituser-002":
+            # 输入新的手机号码
+            self.userinfo_opt.input_phone(params[2]['phone'])
+            self.userinfo_opt.wait(1)
+        if params[0] == "edituser-003":
+            # 输入新的email地址
+            self.userinfo_opt.input_email(params[2]['email'])
+            self.userinfo_opt.wait(1)
+        if params[0] == "edituser-004":
+            # 输入新的密码
+            self.userinfo_opt.input_password(params[2]['password'])
+            self.userinfo_opt.wait(1)
         self.userinfo_opt.click_confirm_button()
         self.userinfo_opt.wait(1)
 

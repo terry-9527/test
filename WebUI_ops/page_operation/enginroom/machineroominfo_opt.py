@@ -43,7 +43,7 @@ class MachineRoomInfoOperation(KeyWords):
         if check:
             self.click_element(*self.lct.scheduling_checkbox)
 
-    # 点击缺点按钮
+    # 点击确定按钮
     def click_confirm_button(self):
         self.click_element(*self.lct.confirm_button)
 

@@ -67,7 +67,7 @@ class KeyWords():
                 element = self.driver.find_element(By.CSS_SELECTOR, location)
                 return element
         except Exception as e:
-            print(e, "定位元素失败,定位方式{},定位信息{}".format(locator_type, location))
+            print("定位元素失败,定位方式{0},定位信息{1},失败原因:{2}".format(locator_type, location, e))
 
     def locators(self, locator_type, location):
         try:
@@ -96,7 +96,7 @@ class KeyWords():
                 elements = self.driver.find_elements(By.CSS_SELECTOR, location)
                 return elements
         except Exception as e:
-            print(e, "定位元素失败,定位方式{},定位信息{}".format(locator_type, location))
+            print("定位元素失败,定位方式{0},定位信息{1},失败原因:{2}".format(locator_type, location, e))
 
     # 输入内容：input_text
     def input_text(self, locator_type, location, content):
@@ -124,8 +124,6 @@ class KeyWords():
     def get_text(self, locator_type, location):
         text = self.locator(locator_type, location)
         return text
-
-
 
     # 设置等待时间
     def wait(self, second):

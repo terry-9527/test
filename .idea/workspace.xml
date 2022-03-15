@@ -6,20 +6,42 @@
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/common/base_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/common/base_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/common/get_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/common/get_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/common/getpathInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/common/getpathInfo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebUI_ops/common/keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/common/keywords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/common/public.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/common/public.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/config/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/userinfo_lct.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/userinfo_lct.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/page_operation/system_setting/userinfo/userinfo_opt.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/page_operation/system_setting/userinfo/userinfo_opt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/testcase/test_machineroom_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/testcase/test_machineroom_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUI_ops/page_operation/enginroom/machineroominfo_opt.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/page_operation/enginroom/machineroominfo_opt.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/testdata/machineroominfo.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/testdata/machineroominfo.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI_ops/testdata/userinfo.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI_ops/testdata/userinfo.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/operation_system/demo03.py" beforeDir="false" afterPath="$PROJECT_DIR$/operation_system/demo03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/operation_system/testcase/login/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/operation_system/testcase/login/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Jinja2-3.0.1.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Jinja2-3.0.1.dist-info/LICENSE.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Jinja2-3.0.1.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Jinja2-3.0.1.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Jinja2-3.0.1.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Jinja2-3.0.1.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Jinja2-3.0.1.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/_identifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/_identifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/async_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/bccache.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/bccache.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/compiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/compiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/debug.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/debug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/defaults.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/defaults.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/ext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/idtracking.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/idtracking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/lexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/lexer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/loaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/loaders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/meta.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/meta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/nativetypes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/nativetypes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/nodes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/optimizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/optimizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/py.typed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/runtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/runtime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/sandbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/sandbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/visitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/visitor.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,35 +50,68 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebUI_ops/page_operation/system_setting/userinfo/userinfo_opt.py">
+        <entry file="file://$PROJECT_DIR$/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="72" column="44" lean-forward="true" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
+            <state relative-caret-position="270">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebUI_ops/testcase/test_login.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="36" column="56" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="56" />
               <folding>
-                <element signature="e#28#41#0" expanded="true" />
+                <element signature="e#22#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/userinfo_lct.py">
+        <entry file="file://$PROJECT_DIR$/WebUI_ops/runall.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="18">
+              <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebUI_ops/page_operation/login_opt/login_opt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+            <state relative-caret-position="126">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebUI_ops/page_operation/enginroom/machineroominfo_opt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <folding>
+                <element signature="e#22#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebUI_ops/common/get_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="32" column="16" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,11 +120,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebUI_ops/common/keywords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+            <state relative-caret-position="125">
+              <caret line="124" column="40" selection-start-line="124" selection-start-column="28" selection-end-line="124" selection-end-column="40" />
               <folding>
                 <element signature="e#143#154#0" expanded="true" />
+                <element signature="e#1056#2443#0" />
+                <element signature="e#2493#3896#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebUI_ops/page_location/enginroom/machineroominfo_lct.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="990">
+              <caret line="55" column="128" lean-forward="true" selection-start-line="55" selection-start-column="128" selection-end-line="55" selection-end-column="128" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebUI_ops/page_location/login_location/login_lct.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebUI_ops/common/logger.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -103,7 +187,6 @@
         <option value="$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo_v2.py" />
         <option value="$PROJECT_DIR$/WebUI_ops/testcase/test_login_v2.py" />
         <option value="$PROJECT_DIR$/WebUI_ops/testdata/test.yaml" />
-        <option value="$PROJECT_DIR$/WebUI_ops/page_operation/enginroom/machineroominfo_opt.py" />
         <option value="$PROJECT_DIR$/WebUI_ops/common/logger.py" />
         <option value="$PROJECT_DIR$/WebUI_ops/runall.py" />
         <option value="$PROJECT_DIR$/WebUI_ops/common/getpathInfo.py" />
@@ -117,16 +200,18 @@
         <option value="$PROJECT_DIR$/WebUI_ops/page_location/enginroom/machineroominfo_lct.py" />
         <option value="$PROJECT_DIR$/WebUI_ops/testdata/initsqls.txt" />
         <option value="$PROJECT_DIR$/WebUI_ops/common/get_data.py" />
-        <option value="$PROJECT_DIR$/WebUI_ops/common/keywords.py" />
         <option value="$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/userinfo_lct.py" />
         <option value="$PROJECT_DIR$/WebUI_ops/page_operation/system_setting/userinfo/userinfo_opt.py" />
         <option value="$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo.py" />
+        <option value="$PROJECT_DIR$/WebUI_ops/testcase/test_login.py" />
+        <option value="$PROJECT_DIR$/WebUI_ops/page_operation/enginroom/machineroominfo_opt.py" />
+        <option value="$PROJECT_DIR$/WebUI_ops/common/keywords.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="211" />
+    <option name="y" value="11" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -139,80 +224,32 @@
         <subPane>
           <expand>
             <path>
-              <item name="Appium_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Appium_project" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Appium_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Appium_project" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="WebUI_ops" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Appium_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Appium_project" type="462c0819:PsiDirectoryNode" />
-              <item name="WebUI_ops" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Appium_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Appium_project" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="WebUI_ops" type="462c0819:PsiDirectoryNode" />
               <item name="page_location" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Appium_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Appium_project" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="WebUI_ops" type="462c0819:PsiDirectoryNode" />
               <item name="page_location" type="462c0819:PsiDirectoryNode" />
-              <item name="system_setting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Appium_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Appium_project" type="462c0819:PsiDirectoryNode" />
-              <item name="WebUI_ops" type="462c0819:PsiDirectoryNode" />
-              <item name="page_location" type="462c0819:PsiDirectoryNode" />
-              <item name="system_setting" type="462c0819:PsiDirectoryNode" />
-              <item name="userinfo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Appium_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Appium_project" type="462c0819:PsiDirectoryNode" />
-              <item name="WebUI_ops" type="462c0819:PsiDirectoryNode" />
-              <item name="page_operation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Appium_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Appium_project" type="462c0819:PsiDirectoryNode" />
-              <item name="WebUI_ops" type="462c0819:PsiDirectoryNode" />
-              <item name="page_operation" type="462c0819:PsiDirectoryNode" />
               <item name="enginroom" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Appium_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Appium_project" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="WebUI_ops" type="462c0819:PsiDirectoryNode" />
               <item name="page_operation" type="462c0819:PsiDirectoryNode" />
-              <item name="system_setting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Appium_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Appium_project" type="462c0819:PsiDirectoryNode" />
-              <item name="WebUI_ops" type="462c0819:PsiDirectoryNode" />
-              <item name="page_operation" type="462c0819:PsiDirectoryNode" />
-              <item name="system_setting" type="462c0819:PsiDirectoryNode" />
-              <item name="userinfo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Appium_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Appium_project" type="462c0819:PsiDirectoryNode" />
-              <item name="WebUI_ops" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Appium_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Appium_project" type="462c0819:PsiDirectoryNode" />
-              <item name="WebUI_ops" type="462c0819:PsiDirectoryNode" />
-              <item name="testdata" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,8 +259,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebUI_ops/testcase" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -244,8 +281,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_userinfo.py">
-    <configuration name="userinfo_opt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.public">
+    <configuration name="public" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Appium_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -253,11 +290,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WebUI_ops/page_operation/system_setting/userinfo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WebUI_ops/common" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WebUI_ops/page_operation/system_setting/userinfo/userinfo_opt.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WebUI_ops/common/public.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -309,15 +346,15 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.public" />
       <item itemvalue="Python tests.Unittests for test_machineroom_info.TestMachineRoomInfo.test_edit_machineroom" />
       <item itemvalue="Python tests.Unittests in test_machineroom_info.py" />
       <item itemvalue="Python tests.Unittests in test_userinfo.py" />
-      <item itemvalue="Python.userinfo_opt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.public" />
         <item itemvalue="Python tests.Unittests in test_userinfo.py" />
-        <item itemvalue="Python.userinfo_opt" />
         <item itemvalue="Python tests.Unittests in test_machineroom_info.py" />
         <item itemvalue="Python tests.Unittests for test_machineroom_info.TestMachineRoomInfo.test_edit_machineroom" />
       </list>
@@ -337,15 +374,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_userinfo_py - 2021.10.13 at 16h 24m 18s.xml">
-      <configuration name="Unittests in test_userinfo.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_userinfo_py - 2021.10.13 at 17h 57m 09s.xml">
-      <configuration name="Unittests in test_userinfo.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_userinfo_py - 2021.10.13 at 18h 01m 02s.xml">
-      <configuration name="Unittests in test_userinfo.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_userinfo_py - 2021.10.13 at 18h 08m 50s.xml">
       <configuration name="Unittests in test_userinfo.py" configurationId="tests" />
     </history-entry>
@@ -367,99 +395,48 @@
     <history-entry file="Unittests_in_test_userinfo_py - 2021.10.13 at 18h 28m 39s.xml">
       <configuration name="Unittests in test_userinfo.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_userinfo_py - 2021.10.13 at 21h 57m 59s.xml">
+      <configuration name="Unittests in test_userinfo.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_userinfo_py - 2021.10.14 at 22h 08m 45s.xml">
+      <configuration name="Unittests in test_userinfo.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_userinfo_py - 2021.10.14 at 22h 13m 20s.xml">
+      <configuration name="Unittests in test_userinfo.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="DB Browser" weight="0.3295207" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16176471" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16491044" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="DB Execution Console" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" weight="0.32917964" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32917964" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="DB Browser" order="2" weight="0.3295207" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34475598" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.3438178" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="DB Execution Console" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49894625" visible="true" weight="0.3275488" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32917964" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50105375" side_tool="true" weight="0.3275488" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python38/Lib/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="199" column="8" selection-start-line="199" selection-start-column="8" selection-end-line="199" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/page_operation/login_opt/login_opt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/page_location/login_location/login_lct.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python38/site-packages/ddt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="181" selection-start-line="181" selection-end-line="181" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/testdata/test.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/testcase/test_login.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://D:/Python38/Lib/random.py" />
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python38/site-packages/ddt.py" />
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/testdata/test.yaml" />
     <entry file="file://$PROJECT_DIR$/operation_system/run/run_all.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/testcase/test_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="e#22#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -470,48 +447,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/log/error.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="95">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/log/all.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/common/logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-328023420/nt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="301" column="4" selection-start-line="301" selection-start-column="4" selection-end-line="301" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python38/Lib/genericpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/log/error.log" />
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/log/all.log" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-328023420/nt.py" />
+    <entry file="file://D:/Python38/Lib/genericpath.py" />
     <entry file="file://$PROJECT_DIR$/WebUI_ops/demo01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" selection-start-line="3" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/runall.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -585,37 +528,11 @@
     <entry file="file://$PROJECT_DIR$/test_exam.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python38/site-packages/pymysql/cursors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="147" selection-start-line="147" selection-end-line="147" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python38/site-packages/pymysql/cursors.py" />
     <entry file="file://$PROJECT_DIR$/operation_system/opsmysql.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/common/base_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/common/public.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -629,13 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/page_location/enginroom/machineroominfo_lct.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="55" column="128" lean-forward="true" selection-start-line="55" selection-start-column="128" selection-end-line="55" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebUI_ops/testdata/initsqls.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -643,113 +553,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/page_operation/enginroom/machineroominfo_opt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-          <folding>
-            <element signature="e#22#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python38/Lib/string.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python38/Lib/json/encoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="201" selection-start-line="201" selection-end-line="201" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python38/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="230" selection-start-line="230" selection-end-line="230" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python38/Lib/site-packages/selenium/webdriver/remote/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python38/Lib/logging/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1420" selection-start-line="1420" selection-end-line="1420" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python38/Lib/site-packages/selenium/webdriver/remote/remote_connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="389" selection-start-line="389" selection-end-line="389" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python38/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="963" selection-start-line="963" selection-end-line="963" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python38/Lib/urllib/parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/common/getpathInfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/common/get_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="63" column="26" lean-forward="true" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/page_operation/login_opt/login_opt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/Python38/Lib/string.py" />
+    <entry file="file://D:/Python38/Lib/json/encoder.py" />
+    <entry file="file://D:/Python38/Lib/json/__init__.py" />
+    <entry file="file://D:/Python38/Lib/site-packages/selenium/webdriver/remote/utils.py" />
+    <entry file="file://D:/Python38/Lib/logging/__init__.py" />
+    <entry file="file://D:/Python38/Lib/site-packages/selenium/webdriver/remote/remote_connection.py" />
+    <entry file="file://D:/Python38/Lib/site-packages/selenium/webdriver/remote/webdriver.py" />
+    <entry file="file://D:/Python38/Lib/urllib/parse.py" />
     <entry file="file://$PROJECT_DIR$/WebUI_ops/page_location/system_setting/userinfo/userinfo_lct.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI_ops/common/keywords.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
-          <folding>
-            <element signature="e#143#154#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,11 +580,125 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebUI_ops/testcase/test_userinfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+        <state relative-caret-position="1530">
+          <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/common/getpathInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/common/get_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/common/logger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/common/public.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="84" column="30" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/testcase/test_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="56" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="56" />
+          <folding>
+            <element signature="e#22#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/runall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/common/base_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/page_operation/login_opt/login_opt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/page_operation/enginroom/machineroominfo_opt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="e#22#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/page_location/login_location/login_lct.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/common/keywords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="124" column="40" selection-start-line="124" selection-start-column="28" selection-end-line="124" selection-end-column="40" />
+          <folding>
+            <element signature="e#143#154#0" expanded="true" />
+            <element signature="e#1056#2443#0" />
+            <element signature="e#2493#3896#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI_ops/page_location/enginroom/machineroominfo_lct.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="55" column="128" lean-forward="true" selection-start-line="55" selection-start-column="128" selection-end-line="55" selection-end-column="128" />
         </state>
       </provider>
     </entry>
